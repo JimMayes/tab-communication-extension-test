@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="sendMessage()">Click me</button>
+
+<script>
+    function sendMessage() {
+        window.postMessage({ type: "FROM_PAGE", text: "Hello from the webpage!" }, "*");
+        console.log("Message sent from the webpage");
+    }
+</script>
+
+</body>
+</html>
